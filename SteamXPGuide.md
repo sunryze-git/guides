@@ -41,6 +41,7 @@ I recommend using these launch options, which improve performance of the Steam c
 - ``-no-dwrite`` - Uses GDI for font rendering instead of DWrite
 - ``-nofriendsui`` - Disables FriendUI from showing automatically
 - ``-opengl`` - Enables OpenGL rendering
+- ``-tcp`` - Forces TCP connectivity (this is deprecated and probably won't work in the future)
 
 ### My Two Cents
 I have noticed a lot of weird networking issues in OCA. I suspect that the networking stack has some broken procedures under the latest OCA version. I suspect that it is possible UDP networking is a little messed up under OCA.
