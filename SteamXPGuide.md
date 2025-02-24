@@ -11,7 +11,7 @@ I have used this setup when creating this guide:
 **DO NOT** use the Steam installer from the main webpage. I have found the default installer to be unreliable. It is best to install the latest compatible version for Windows 7 accessible [here](https://archive.org/details/steam_12-31-2023).
 
 ## ProxHTTPSProxy
-After Steam is installed, you need to install [ProxHTTPSProxy.](https://storage.levelleap.com/nina/clients/msnp/tools/ProxHTTPSProxy_Setup.exe). It is needed to fix issues with Steam network connectivity.
+After Steam is installed, you need to install [ProxHTTPSProxy](https://storage.levelleap.com/nina/clients/msnp/tools/ProxHTTPSProxy_Setup.exe). It is needed to fix issues with Steam network connectivity.
 
 ### Installing ProxHTTPSProxy
 ProxHTTPSProxy has some important steps you need to take after downloading and installing it:
