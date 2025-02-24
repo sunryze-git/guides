@@ -8,7 +8,7 @@ I have used this setup when creating this guide:
 - .NET and MSVC++ installed
 
 ## Install Steam
-**DO NOT** use the Steam installer from the main webpage. I have found this installer to be unreliable. It is best to install the latest compatible version for Windows 7 accessible [here](https://archive.org/details/steam_12-31-2023).
+**DO NOT** use the Steam installer from the main webpage. I have found the default installer to be unreliable. It is best to install the latest compatible version for Windows 7 accessible [here](https://archive.org/details/steam_12-31-2023).
 
 ## ProxHTTPSProxy
 After Steam is installed, you need to install [ProxHTTPSProxy.](https://storage.levelleap.com/nina/clients/msnp/tools/ProxHTTPSProxy_Setup.exe). It is needed to fix issues with Steam network connectivity.
@@ -24,11 +24,12 @@ ProxHTTPSProxy has some important steps you need to take after downloading and i
 You will not need to do this on every startup, this sets up the system to use the proxy. The proxy app will automatically start upon login from this point forward.
 
 **IMPORTANT**:
-Chromium based browsers will from now on complain that websites are using HSTS and will refuse to let you access them. I have not encountered this issue with Firefox based browsers. I have tested both Firefox 115 ESR and Firefox 128 ESR, I have found 128 ESR to work better in some cases.
+Chromium based browsers will from now on complain that websites are using HSTS and will refuse to let you access them. I have not encountered this issue with Firefox based browsers. I recommend Firefox ESR 128.
 > *If you use 128 ESR, you should enable system title bar in customization settings.*
+> *There is also a bug where Firefox will hang after you close it, requiring it to be terminated in Task Manager.*
 
 ## Running Steam
-Set the Steam executable compatibility to Windows 7. After this, run the executable.
+Set the Steam executable compatibility to Windows 7, or else it will try to update itself to a version that is incompatible and/or complain that it is not supported on Windows XP anymore.
 
 ### Launch Options
 I recommend using these launch options, which improve performance of the Steam client:
@@ -49,7 +50,7 @@ I recommend using these launch options, which improve performance of the Steam c
 - ``-tcp`` - Forces TCP connectivity (this is deprecated and probably won't work in the future)
 
 ### My Two Cents
-I have noticed a lot of weird networking issues in OCA. I suspect that the networking stack has some broken procedures under the latest OCA version. I suspect that it is possible UDP networking is a little messed up under OCA.
+I have noticed a lot of weird networking issues in OCA. I suspect that the networking stack has some broken procedures under the latest OCA version.
 
 ## Steam Configuration
 After you get Steam running, you should go into the settings of Steam and change these settings. This should help significantly with performance:
