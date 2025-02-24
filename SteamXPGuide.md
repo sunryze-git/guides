@@ -26,13 +26,21 @@ Chromium based browsers will from now on complain that websites are using HSTS a
 Set the Steam executable compatibility to Windows 7. After this, run the executable.
 
 ### Launch Options
-If Steam does not open, is a black screen, or does not let you access the internet, try opening ``steam.exe`` in a command prompt (or set these in the target shortcut) with these launch options:
+I recommend using these launch options, which improve performance of the Steam client:
 
-```-forceservice``` Fixes Steam Service
-
-```-tcp``` Forces TCP Networking
-
-Steam will freeze a LOT. If it does it is best to terminate the tree of ``steamwebhelper.exe``, the one using the most memory. This keeps the Steam client open but restarts the user interface.
+``-cef-disable-d3d11`` - Disables DirectX 11
+``-cef-disable-gpu-compositing`` - Disables GPU Compositing
+``-cef-disable-gpu`` - Disables GPU acceleration
+``-cef-disable-sandbox`` - Disables Chromium Sandbox
+``-cef-disable-occlusion`` - Disables Chromium Occlusion
+``-cef-ignore-certificate-errors`` - Ignores Chromium certificate errors
+``-disable-winh264`` - Disables H264
+``-enable-desktop-gl-fallback`` - Enables OpenGL fallback
+``-forceservice`` - Forces Steam service on Admin accounts
+``-no-cef-sandbox`` - Disables Chromium Sandbox (2)
+``-no-dwrite`` - Uses GDI for font rendering instead of DWrite
+``-nofriendsui`` - Disables FriendUI from showing automatically
+``-opengl`` - Enables OpenGL rendering
 
 ### My Two Cents
 I have noticed a lot of weird networking issues in OCA. I suspect that the networking stack has some broken procedures under the latest OCA version. I suspect that it is possible UDP networking is a little messed up under OCA.
