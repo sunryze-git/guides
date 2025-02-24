@@ -11,12 +11,17 @@ I have used this setup when creating this guide:
 **DO NOT** use the Steam installer from the main webpage. I have found this installer to be unreliable. It is best to install the latest compatible version for Windows 7 accessible [here](https://archive.org/details/steam_12-31-2023).
 
 ## ProxHTTPSProxy
-After Steam is installed, you need to install [this](https://storage.levelleap.com/nina/clients/msnp/tools/ProxHTTPSProxy_Setup.exe). I really am not sure why it is needed but it allows Steam to be able to access the internet correctly. Without this you will have issues signing in and won't be able to download games.
+After Steam is installed, you need to install [ProxHTTPSProxy.](https://storage.levelleap.com/nina/clients/msnp/tools/ProxHTTPSProxy_Setup.exe). It is needed to fix issues with Steam network connectivity.
 
-After downloading and installing it, you will need to open its Program Files x86 directory. In there, run ``ProxHTTPS Cert Install.exe``. Wait a few seconds. Then open a Command Prompt in that directory, and run ``ProxySwitch.BAT`` and give it argument A. It would look as such in CMD:
-``ProxySwitch.BAT A``
+### Installing ProxHTTPSProxy
+ProxHTTPSProxy has some important steps you need to take after downloading and installing it:
+1. Navigate to the ``C:\Program Files (x86)\ProxHTTPSProxy`` directory.
+2. Run ``ProxHTTPS Cert Install.exe`` and wait a few seconds.
+3. Open a Command Prompt in the current directory.
+4. Run ``proxyswitch.bat A`` exactly as stated.
+5. Run ``ProxHTTPSProxy_PSwitch.exe``. This will start the proxy immediately.
 
-After that, run ``ProxHTTPSProxy_PSwitch.exe``. This will start the proxy. It will launch on startup.
+You will not need to do this on every startup, this sets up the system to use the proxy. The proxy app will automatically start upon login from this point forward.
 
 **IMPORTANT**:
 Chromium based browsers will from now on complain that websites are using HSTS and will refuse to let you access them. I have not encountered this issue with Firefox based browsers. I have tested both Firefox 115 ESR and Firefox 128 ESR, I have found 128 ESR to work better in some cases.
