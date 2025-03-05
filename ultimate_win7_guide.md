@@ -22,7 +22,7 @@ The easiest place to find Windows 7 installation media is through [archive.org](
 Modern computers, especially ones made after 2017, need some extra drivers for Windows 7 to run correctly. There are numerous ways to add drivers, ranging from integration software such as [NTLite](https://www.ntlite.com/), and [MSMG Toolkit](https://msmgtoolkit.in/). However, the easiest way is to add drivers using the built-in [DISM](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/what-is-dism?view=windows-11) included with Windows.
 
 ### What drivers do I need?
-Typically, you will need an updated xHCI (USB 3) stack. This allows Windows 7 to be able to access USB 3 devices. It did include some by default at the time in 2009, however chipsets have been updated since then, and these drivers are not included. The Windows 8 USB stack was backported to Windows 7, and is downloadable [here](https://www.mediafire.com/file/h8zjqo8mxmppm5n). 
+Typically, you will need an updated xHCI (USB 3) stack. This allows Windows 7 to be able to access USB 3 devices. It did include some by default at the time in 2009, however chipsets have been updated since then, and these drivers are not included. The Windows 8 USB stack was backported to Windows 7, and is downloadable [here](https://www.mediafire.com/file/h8zjqo8mxmppm5n). The password for the file is **MDL2024**. This may change over time.
 
 **You will need to install [KB2864202](https://www.catalog.update.microsoft.com/Search.aspx?q=KB2864202) (KMDF Security Update) and [KB4474419](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4474419) (SHA-2 code signing support) before installing or integrating this driver.**
 
