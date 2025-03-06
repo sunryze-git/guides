@@ -16,7 +16,7 @@ The following table shows the latest hardware support for Windows 7.
 > *Radeon RX 5000 series and newer have issues regarding Aero performance.
 
 ## Finding Installation Media
-The easiest place to find Windows 7 installation media is through [archive.org](archive.org). Be aware that some of these downloads may be modified. 
+The easiest place to find Windows 7 installation media is through [archive.org](https://archive.org). Be aware that some of these downloads may be modified. 
 
 ## Creating installation media
 Modern computers, especially ones made after 2017, need some extra drivers for Windows 7 to run correctly. There are numerous ways to add drivers, ranging from integration software such as [NTLite](https://www.ntlite.com/), and [MSMG Toolkit](https://msmgtoolkit.in/). However, the easiest way is to add drivers using the built-in [DISM](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/what-is-dism?view=windows-11) included with Windows.
