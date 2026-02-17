@@ -1,5 +1,5 @@
 # Windows 7 Survival Guide
-*Last updated 2/17/2025*
+*Last updated 2/17/2026*
 
 This guide is not for the inexperienced. You should know a thing or two about how Windows works, how to install it, and how to fix your PC if something goes wrong.
 
@@ -69,7 +69,16 @@ A decent amount of software has dropped Windows 7 support over the last few year
 - Firefox has dropped support, however they still maintain 115 ESR.
 - Wallpaper Engine has dropped support for Windows 7.
 
+## Software
+
 ### Games
 As drivers age, so does compatibility with more modern titles. Windows 7 does support fairly recent graphics drivers, but as time passes they will slowly become less compatible. DX12 is supported in some titles, but many titles do not support 7 at all. 
 
 You can utilize the WineD3D DLLs to translate DirectX to OpenGL if you want to play around, and there also is DXVK to translate DirectX to Vulkan if your GPU supports it.
+
+### Web Browsers
+As mentioned prior, most mainstream browsers like Chrome and Firefox have dropped support. However, you do still have options.
+
+- [r3dfox](https://github.com/Eclipse-Community/r3dfox) is a fork of Firefox developed by the Eclipse Community, intended to support Windows XP with the One Core API, but does support any version of Windows XP and above.
+
+- [Supermium](https://github.com/win32ss/supermium) is a fork of Chromium developed by win32ss, which follows the same target of supporting Windows XP and above.
